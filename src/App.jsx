@@ -1,7 +1,10 @@
- import React, { useState } from 'react'
+ import React, { useEffect,useState } from 'react'
  import Search from './Component/Search.jsx'
+ const API_BASE_URL ='https://api.themoviedb.org/3';
+ const API_KEY= import.meta.VITE_TMDB_API_KEY;
  export const App = () => {
   const[searchTerm,setsearchTerm]=useState('');
+  useEffect(()=>{ },[]);
    return (
      <main className='hero'>
       <div  className='patter'/>
